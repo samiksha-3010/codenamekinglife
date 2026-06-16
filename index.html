@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="utf-8">
+    <title>Codename King Life </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Codename King Life ">
+    <meta name="keywords" content="Codename King Life ">
+    <meta name="author" content="Codename King Life ">
+    <link rel="icon" type="image/x-icon" href="image/logo/favicon.png">
+    <link rel="canonical" href="/">
+    <meta property="og:title" content="Codename King Life ">
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css?v=1.2">
+    <link rel="stylesheet" href="css/home.css?v=1.3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css">
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preload" as="image" href="image/slider/slider_desktop.webp">
+    <link rel="preload" as="image" href="image/slider/slider_mobile.webp">
+</head>
+<style>
+    @media (max-width: 767px) {
+        #overview {
+            padding: 8px 10px !important;
+        }
+    }
+</style>
+
+<body>
+
+    <!--============================  Nav Start ===============================-->
+    <div class="container-fluid head1">
+        <div class="head1-inner">
+            <!--============== LEFT: Logo ================-->
+            <div class="nav-logo">
+                <a>
+                    <img class="img-fluid headlogo" src="image/logo/codename_king.png" alt="logo">
+                </a>
+            </div>
+            <!-- ================= CENTER: Menu links — sirf desktop  =============-->
+            <nav class="nav-center-links d-none d-lg-flex">
+                <a href="#exclusivity" class="nav-link-item" data-log="nav-office">Exclusivity</a>
+                <a href="#overview" class="nav-link-item" data-log="nav-overview">OVERVIEW</a>
+                <a href="#location" class="nav-link-item" data-log="nav-location">LOCATION</a>
+                <a href="#contact-Us" class="nav-link-item" data-log="nav-contact">CONTACT US</a>
+            </nav>
+            <!--================= RIGHT: Button (desktop) + Hamburger (mobile)=============== -->
+            <div class="nav-right">
+                <a href="javascript:void(0)" class="enquire-nav-btn d-none d-lg-inline-block" data-bs-toggle="modal"
+                    data-bs-target="#contactModal" data-log="header-enquire-btn">
+                    Enquire Now
+                </a>
+                <span class="headspan2 d-lg-none">
+                    <a onclick="openNav()" data-log="header-menu-open">
+                        <img class="img-fluid" src="image/logo/icon2.png" alt="Mobile Menu Icon">
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!--============================  Nav End Desktop  ===============================-->
+
+    <!--============================ MOBILE MENU Start ===============================-->
+    <div id="myNav" class="poverlay">
+        <div class="container-fluid menucf">
+            <div class="container headcon">
+                <div class="row">
+                    <div class="col-6 mobmainmenu1">
+                        <a data-log="navbar-logo-click">
+                            <img class="img-fluid" src="image/logo/codename_king.png" alt="Codename King Life Logo">
+                        </a>
+                    </div>
+                    <div class="col-6 closenav mobmainmenu2">
+                        <a href="javascript:void(0)" class="desktopclosebtn" onclick="closeNav()"
+                            data-log="navbar-close">&times;</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="dd">
+                            <ul class="headmenu_ul menuscroll" data-log="navbar-menu">
+
+                                <li class="headermenu">
+                                    <div class="nodrop-box">
+                                        <a class="nodrop-text" href="#exclusivity"
+                                            data-log="navbar-offices">Exclusivity</a>
+                                    </div>
+                                </li>
+                                <li class="headermenu">
+                                    <div class="nodrop-box">
+                                        <a class="nodrop-text" href="#overview"
+                                            data-log="navbar-overview">Overview</a>
+                                    </div>
+                                </li>
+                                <li class="headermenu">
+                                    <div class="nodrop-box">
+                                        <a class="nodrop-text" href="#location"
+                                            data-log="navbar-location">Location</a>
+                                    </div>
+                                </li>
+                                <li class="headermenu">
+                                    <div class="nodrop-box">
+                                        <a class="nodrop-text" href="#contact-Us" data-log="navbar-contact">Contact
+                                            Us</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- Enquire Now — mobile menu ke andar -->
+                        <div class="mob-menu-enquire">
+                            <a href="#contact-Us" class="enquire-nav-btn" onclick="closeNav()"
+                                data-log="navbar-enquire-mobile">
+                                Enquire Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--============================ MOBILE MENU End ===============================-->
+    <!--============================ MENU END ===============================-->
+    <!--================== Hero Slider Start =======================-->
+    <section id="Home" data-log="homepage-hero-section" style="margin-top: 0; padding-top: 0;">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/slider/slider_desktop.webp" class="w-100 rtpmainimg" alt="Luxury Residential Project Banner"
+                        data-log="carousel-image-desktop">
+                    <img src="image/slider/slider_mobile.webp" class="w-100 rtpmobimg" alt="Luxury Residential Project Banner" data-log="carousel-image-mobile">
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <!--================== Hero Slider end =======================-->
+    <!-- ============use for desktop 1st and last point image  ============= -->
+    <section class="overview  " id="exclusivity" data-aos="zoom-in-up" data-aos-duration="1500"
+        data-aos-delay="100" data-log="overview">
+        <div class="container-fluid px-0">
+            <div class="content-panel">
+                <h1 class="landmark-headline  mobileheading" data-aos="zoom-in-up" data-aos-duration="1500"
+                    data-aos-delay="100">
+                    Empowered by Exclusivity
+                </h1>
+                <p class="landmark-body" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="100">
+                    Living should never feel limited. Not by the city,
+                    and certainly not by the home you live in.
+               
+                </p>
+                <div class="image-panel  d-block d-md-none" data-aos="zoom-in-up" data-aos-duration="1500"
+                    data-aos-delay="100">
+                    <picture>
+                        <source media="(min-width: 1700px)" srcset="image/overview_mobileimage.png">
+                        <img src="image/overview/overview_mobileimage.png" alt="Overview Mobile Image" data-log="overview-image">
+                    </picture>
+                    <div class="img-ground-shadow"></div>
+                </div>
+      
+
+                <div class="details-list">
+                    <ul>
+                        <li class="detail-row">
+                            <span class="detail-tag mt-4">
+                                <span style="color: #9E6930; font-weight: 600;">
+                                    Spacious 3 & 4 bed residences
+                                </span>
+                                ranging from 1,500 to 2,100 sq. ft., designed for elevated
+                                everyday living.
+                            </span>
+                        </li>
+
+                        <li class="detail-row">
+                            <span>
+                                Expansive
+                                <span style="color: #9E6930; font-weight: 600;">
+                                    6 ft. balconies
+                                </span>
+                                that extend your living space into the open air
+                            </span>
+                        </li>
+
+
+                        <li class="detail-row">
+                            <span> In a city that constantly evolves,
+                                distinction lies in what remains rare.
+                                <span style="color: #9E6930; font-weight: 600;">
+                                    135 exclusive residences
+                                </span>
+                                that redefine true luxury.
+                            </span>
+                        </li>
+
+                        <li class="detail-row">
+                            <span>
+                                A singular
+                                <span style="color: #9E6930; font-weight: 600;">
+                                    iconic high-rise tower
+                                </span>
+                                with unobstructed views of the city skyline.
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="image-panel  d-none d-md-block" data-aos="zoom-in-up" data-aos-duration="1500"
+                data-aos-delay="100">
+                <picture>
+                    <source media="(min-width: 1700px)" srcset="image/overview/desktop_overview.webp">
+                    <img src="image/overview/desktop_overview.webp" alt="Overview Desktop Image" data-log="overview-image">
+                </picture>
+                <div class="img-ground-shadow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--================== Landmark Slider end =======================-->
+    <!--================ Business section Start ====================-->
+    <!-- =============use for desktop================  -->
+    <section class="office mobile-padding" id="overview" style="background-color: #f8f8f8; " data-log="office">
+        <div class="container-fluid px-0">
+            <div class="row g-0 align-items-center">
+
+                <!-- Left Image - 50% -->
+                <div class="col-lg-6 d-none d-lg-block" data-aos="zoom-in-up" data-aos-duration="1500"
+                    data-aos-delay="100">
+                    <picture>
+                        <img src="image/overview/kingdom_img.webp" alt="Codename King Life" data-log="office-image"
+                            loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;" />
+                    </picture>
+                </div>
+
+                <!-- Right Content - 50% -->
+                <div class="col-lg-6 col-12 px-4 px-lg-5 py-5" data-aos="zoom-in-up" data-aos-duration="1500"
+                    data-aos-delay="100">
+
+                    <h1 class="landmark-headline mobileheading" data-aos="zoom-in-up" data-aos-duration="1500"
+                        data-aos-delay="100">
+                        Your Kingdom Of Calm
+                    </h1>
+
+                    <p class="landmark-body" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="100">
+                        There is a rare comfort in having spaces
+                        that invite you to slow down and breathe deeper.
+                    </p>
+
+                    <!-- Mobile Image -->
+                    <div class="d-block d-lg-none mb-4" data-aos="zoom-in-up" data-aos-duration="1500"
+                        data-aos-delay="100">
+                        <picture>
+                            <img src="image/overview/kingdom_img.webp" alt="Codename King Life" data-log="office-image"
+                                loading="lazy" style="width:100%;" />
+                        </picture>
+                    </div>
+
+                    <div class="info-row">
+                        <ul class="info-value mb-0">
+                            <li>
+                                Over an acre of lush open
+                                <span style="color:#9E6930; font-weight:600;">green space</span>
+                                designed to bring calm into everyday life.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="info-row">
+                        <ul class="info-value mb-0">
+                            <li>
+                                <span style="color:#9E6930; font-weight:600;">A thoughtfully designed promenade</span>
+                                that encourages unhurried walks and moments of pause.
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============= use for mobile ============== -->
+
+    <!--================ Business section end ====================-->
+    <section id="location" class="overflow-hidden" data-log="location-section">
+        <div class="container-fluid raiamenitiescf pt-5">
+            <div class="row mobartrow align-items-center">
+                <div class="col-xxl-6 col-xl-6 locationad col-lg-6 col-sm-12 order-2 order-lg-1 justify-content-center"
+                    data-aos="zoom-in" data-aos-duration="1500">
+                    <h3 class="landmark-headline pt-lg-0 pt-4">Positioned to Command</h3>
+                    <p class="landmark-body ">
+                        Codename King Life is strategically
+                        located in Koyambedu, giving you
+                        seamless access across the city.
+                    </p>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-sm-12 order-1 order-lg-2  d-block d-lg-none  mt-4 mb-4"
+                        data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="100">
+                        <div class="owl-carousel owl-theme raiamenities">
+                            <div class="item">
+                                <picture>
+                                    <img class="img-fluid" src="image/location/map-03.png" alt="Location Map Image"
+                                        data-log="location-map-image">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <p class="rus_text">Upcoming Infrastructure:</p> -->
+                    <ul class="list-unstyled rus_text" data-log="location-distance-list">
+                        <li class="mb-3 d-flex align-items-center border-bottom pb-2">
+                            <i class="bi bi-geo-alt-fill me-2"></i>
+                            <span class="flex-grow-1 text-start">Koyambedu Metro Station </span>
+                            <span style="color: #9E6930">1 min</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center border-bottom pb-2">
+                            <i class="bi bi-geo-alt-fill me-2"></i>
+                            <span class="flex-grow-1 text-start">VR Mall</span>
+                            <span style="color: #9E6930">5 min</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center border-bottom pb-2">
+                            <i class="bi bi-geo-alt-fill me-2"></i>
+                            <span class="flex-grow-1 text-start">Chennai International Airport</span>
+                            <span style="color: #9E6930">20 min</span>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-sm-12 order-1 order-lg-2 d-none d-lg-block"
+                    data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="100">
+                    <div class="owl-carousel owl-theme raiamenities">
+                        <div class="item">
+                            <picture>
+                                <img class="img-fluid" src="image/location/map-03.png" alt="Location Map Image"
+                                    data-log="location-map-image">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====================== Location section End=================-->
+    <!--====================== form section =================-->
+    <section id="contact-Us" class=" overflow-hidden" data-log="contact-section">
+        <div class="container-fluid footer2cf">
+            <div class="container formcon headcon">
+                <div class="row formrow">
+                    <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-10 col-sm-12 text-center">
+                        <h1 class="formp mb-3">ENQUIRY NOW</h1>
+                        <p class="mobformp pb-4">Get in Touch</p>
+                        <form action="thank-you.php" method="post" id="contactForm" novalidate
+                            data-log="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-input" placeholder="Name*"
+                                        required data-log="form-name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-input" placeholder="Email*"
+                                        required data-log="form-email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" name="mobile" id="phoneInput" class="form-input"
+                                        placeholder="Phone*" required data-log="form-phone">
+                                    <input type="hidden" name="CountryCode" id="countryCodeInput" value="91">
+                                </div>
+                                <div class="form-group checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="consent1" checked readonly>
+                                        I agree and authorize the team to contact me. This will override DNC / NDNC
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="consent2" checked readonly>
+                                        <span>I consent to the processing of my personal data according to
+                                            <a href="privacy-policy.html" target="_blank"
+                                                style="color:#555; white-space: nowrap;"
+                                                data-log="privacy-policy-link">Privacy Policy</a> &amp;
+                                            <a href="terms-conditions.html" target="_blank"
+                                                style="color:#555; white-space: nowrap;"
+                                                data-log="terms-conditions-link">T&amp;C</a>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="form-button" data-log="form-submit-button">Enquire
+                                        Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====================== form section End=================-->
+    <!--====================== LOGO SLIDER SECTION START =================-->
+    <!-- <div class="container-fluid footbtns stickme">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 footcol2 text-center">
+                    <button class="btn footerbtns" type="button"><a href="#" data-bs-toggle="modal"
+                            data-bs-target="#contactModal" data-log="contact-sales-button">Contact Sales</a></button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="enquieymb pricepop p-1  d-block d-lg-none" data-bs-toggle="modal" data-bs-target="#contactModal"
+        style="cursor:pointer;">
+        <h5 class="mbenquiry text-center">ENQUIRE NOW</h5>
+    </div>
+    <!--====================== LOGO SLIDER SECTION START =================-->
+    <!--====================== FOOTER SECTION START =================-->
+    <footer class=" footer-section text-white pt-4 pb-2" data-log="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center py-3">
+                    <img src="image/logo/footer_logo.png" alt="" style="height: 100px;" data-log="footer-logo" alt="Footer Logo">
+                </div>
+              
+                <div class="disclamer">
+                    <p><strong> Disclaimer:</strong> : *Terms & Conditions apply. Starting price includes consideration
+                        value, car park, GST and offer cost and excludes taxes and other charges. This project is RERA
+                        registered. The information available on or through this advertisement/ brochure is intended to
+                        provide general information and shall not be deemed to constitute any invitation, solicitation,
+                        offer or sale of any of our product offerings. The Company reserves the right to add, alter or
+                        delete material from the advertisement/ brochure at any time and revise terms under the
+                        applicable law. Please verify all details and aspects of any proposed booking/acquisition of
+                        apartments/units, directly with our authorized representatives*. All bank related offer are
+                        subject to respective bank’s T&Cs
+                    </p>
+                </div>
+                <div class="row">
+                    <div
+                        class="col-lg-5 d-flex flex-wrap mb-3 mb-0 mb-md-0 footsec justify-content-center justify-content-lg-start text-center text-lg-start">
+                        <p class="mb-0 footsec"> Digital Marketing Partner: SSV Technologies</p>
+                    </div>
+                    <div class="col-lg-7 text-md-end text-center">
+                     
+
+                        <a href="privacy-policy.html" class="text-white me-1 text-decoration-none footsec"
+                            data-log="privacy-policy">
+                            Privacy Policy
+                        </a>
+                        <span class="text-white mx-1">|</span>
+                        <a href="terms-conditions.html" class="text-white text-decoration-none footsec"
+                            data-log="terms-conditions">
+                            Terms & Conditions
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!--====================== FOOTER SECTION END =================-->
+    <!--==================== POPUP FORM START =======================-->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true"
+        style="z-index: 1111111111;" data-log="modal-contact">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center position-relative">
+                    <button type="button" class="btn-close colsebtn position-absolute top-0 end-0 m-3"
+                        data-bs-dismiss="modal" aria-label="Close" data-log="modal-close"></button>
+                </div>
+                <h1 class="formp text-center mb-3">ENQUIRE NOW</h1>
+                <div class="modal-body ">
+                    <form action="thank-you.php" method="post" name="PopupForm" id="PopupForm"
+                        novalidate="novalidate" data-log="modal-form">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="user-box">
+                                    <input type="text" name="name" placeholder="Name"
+                                        data-log="modal-input-name">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="user-box">
+                                    <input type="email" name="email" placeholder="Email"
+                                        data-log="modal-input-email">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="user-box ">
+                                    <input type="tel" class="text-white" id="phone2" name="mobile" required
+                                        placeholder="Phone*" style="color: #000 !important;"
+                                        data-log="modal-input-phone">
+                                    <input type="hidden" name="CountryCode" class="countrycode" id="countrycode2"
+                                        value="91">
+                                    <label class="labeltag"><span class="brown"></span></label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <label class="form-check-label small-form-check-label largercheckbox"
+                                    for="flexCheckDefault" style="font-size: 14px">
+                                    <input class="form-check-input" type="checkbox" required="required"
+                                        name="consentbox" value="" checked=""> <span
+                                        style="opacity: 0.8;">I
+                                        agree and
+                                        authorize the team to contact
+                                        me. This will
+                                        override the registry with DNC / NDNC</span>
+                                </label>
+                                <label class="form-check-label small-form-check-label largercheckbox"
+                                    for="flexCheckDefault" style="font-size: 14px">
+                                    <input class="form-check-input" type="checkbox" required="required"
+                                        name="consentbox" value="" checked>
+                                    <span style="opacity: 0.8;">
+                                        I consent to the processing of my personal data according to
+                                        <a href="privacy-policy.html" target="_blank" style="color:#555;"
+                                            data-log="privacy-policy">
+                                            Privacy Policy
+                                        </a> &
+                                        <a href="terms-conditions.html" target="_blank" style="color:#555;"
+                                            data-log="terms-conditions">
+                                            T&amp;C
+                                        </a>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="commonBt " id="FooterEnquire" data-log="modal-submit-button">
+                            <span><strong>Enquire
+                                    Now</strong></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--========================= POPUP ENDS ==========================-->
+
+    <!--====================== SCROLL UP BTN ======================-->
+    <button id="scrollUpBtn" title="Go to top">↑</button>
+    <!--====================== SCROLL UP BTN ======================-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="owl/jquery.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/vai.js?v=3"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/analytics.js"></script>
+    <script src="https://unpkg.com/aos%403.0.0-beta.6/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            disable: false,
+            startEvent: 'DOMContentLoaded',
+            initClassName: 'aos-init',
+            animatedClassName: 'aos-animate',
+            useClassNames: false,
+            disableMutationObserver: false,
+            debounceDelay: 10,
+            throttleDelay: 99,
+            offset: 120,
+            delay: 0,
+            duration: 1000,
+            easing: 'ease-in-out',
+            anchorPlacement: 'top-bottom',
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+            // -------- First Input (Main Form) --------
+            var input1 = document.querySelector("#phoneInput");
+            if (input1) {
+                var iti1 = window.intlTelInput(input1, {
+                    separateDialCode: true,
+                    preferredCountries: ["in", "us", "gb"],
+                    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.2.0/js/utils.js"
+                });
+
+                input1.addEventListener("countrychange", function() {
+                    document.getElementById("countryCodeInput").value =
+                        iti1.getSelectedCountryData().dialCode;
+                });
+            }
+
+            // -------- Second Input (Modal Form) --------
+            var input2 = document.querySelector("#phone2");
+            if (input2) {
+                var iti2 = window.intlTelInput(input2, {
+                    separateDialCode: true,
+                    preferredCountries: ["in", "us", "gb"],
+                    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.2.0/js/utils.js"
+                });
+
+                // Set default country code
+                document.getElementById("countrycode2").value =
+                    iti2.getSelectedCountryData().dialCode;
+
+                // Update on change
+                input2.addEventListener("countrychange", function() {
+                    document.getElementById("countrycode2").value =
+                        iti2.getSelectedCountryData().dialCode;
+                });
+            }
+
+        });
+    </script>
+    <!--============= navbar =================-->
+    <script>
+        $(function() {
+            $(".drop-box-44").click(function() {
+                $("#ul44").fadeToggle();
+            });
+
+            $(".drop-box-44").on("click", function() {
+                $(this).toggleClass("marked");
+                $(".drop-text-44").toggleClass("marked1");
+            });
+
+            $(".drop-box-44").click(function() {
+                $(".rotate44").toggleClass("down44");
+            });
+        });
+    </script>
+
+    <script>
+        $(function() {
+            $(".drop-box-33").click(function() {
+                $("#ul33").fadeToggle();
+            });
+
+            $(".drop-box-33").on("click", function() {
+                $(this).toggleClass("marked");
+                $(".drop-text-33").toggleClass("marked1");
+            });
+
+            $(".drop-box-33").click(function() {
+                $(".rotate33").toggleClass("down33");
+            });
+        });
+    </script>
+
+    <script>
+        $(function() {
+            $(".drop-box-22").click(function() {
+                $("#ul22").fadeToggle();
+            });
+
+            $(".drop-box-22").on("click", function() {
+                $(this).toggleClass("marked");
+                $(".drop-text-22").toggleClass("marked1");
+            });
+
+            $(".drop-box-22").click(function() {
+                $(".rotate22").toggleClass("down22");
+            });
+        });
+    </script>
+
+    <script>
+        $(function() {
+            $(".drop-box55").click(function() {
+                $("#ul55").fadeToggle();
+            });
+
+            $(".drop-box55").on("click", function() {
+                $(this).toggleClass("marked");
+                $(".drop-text55").toggleClass("marked1");
+            });
+
+            $(".drop-box55").click(function() {
+                $(".rotate55").toggleClass("down55");
+            });
+        });
+    </script>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll("#myNav a").forEach(function(link) {
+                link.addEventListener("click", function() {
+                    closeNav();
+                });
+            });
+        });
+    </script>
+    <script>
+        let scrollBtn = document.getElementById("scrollUpBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollBtn.style.display = "block";
+            } else {
+                scrollBtn.style.display = "none";
+            }
+        };
+        scrollBtn.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let currentSlide = 0;
+            const slides = document.querySelectorAll(".qr-slide");
+
+            function updateSlides(direction = 1) {
+                slides.forEach((slide, index) => {
+                    slide.classList.remove("active");
+                    if (index === currentSlide) {
+                        slide.style.transform = "translateX(0)";
+                        slide.style.opacity = "1";
+                    } else if (index > currentSlide) {
+                        slide.style.transform = "translateX(100%)";
+                        slide.style.opacity = "0";
+                    } else {
+                        slide.style.transform = "translateX(-100%)";
+                        slide.style.opacity = "0";
+                    }
+                });
+                slides[currentSlide].classList.add("active");
+            }
+            window.changeSlide = function(direction) {
+                let newIndex = currentSlide + direction;
+                if (newIndex < 0) return;
+                if (newIndex >= slides.length) return;
+                currentSlide = newIndex;
+                updateSlides(direction);
+            };
+            updateSlides();
+        });
+
+        function toggleMahaRera() {
+            var panel = document.getElementById("mahareraPanel");
+            panel.style.display =
+                panel.style.display === "block" ? "none" : "block";
+        }
+    </script>
+
+
+    <script>
+        Delete_Cookie('formfilled');
+    </script>
+    <script>
+        document.querySelectorAll('#myNav a, .headmenu_ul a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+
+                if (!targetId.startsWith('#')) return;
+
+                e.preventDefault();
+
+                const target = document.querySelector(targetId);
+                const header = document.querySelector('.head1');
+
+                // menu close (mobile)
+                if (typeof closeNav === "function") {
+                    closeNav();
+                }
+
+                setTimeout(() => {
+                    if (target && header) {
+                        const headerHeight = header.offsetHeight;
+
+                        window.scrollTo({
+                            top: target.offsetTop - headerHeight,
+                            behavior: 'smooth'
+                        });
+
+                        // ✅ URL me same ID set karo
+                        history.pushState(null, null, targetId);
+                    }
+                }, 300);
+            });
+        });
+    </script>
+
+
+    <script>
+        // Navbar transparent → white on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.head1');
+            if (window.scrollY > 10) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+      <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            setTimeout(function() {
+                var contactModal = new bootstrap.Modal(
+                    document.getElementById('contactModal')
+                );
+                contactModal.show();
+            }, 5000); // 5000ms = 5 seconds
+
+        });
+    </script> -->
+
+</body>
+
+</html>
